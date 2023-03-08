@@ -45,6 +45,14 @@ h1 {
     background-color: #98e7f1;
   }
 
+  .barnav{
+    overflow: hidden;
+  }
+  .barnav a:hover{
+    color: #D5C7BC;
+
+  }
+
 
 .intro{
     text-align: center;
