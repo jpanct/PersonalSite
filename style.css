@@ -1,22 +1,9 @@
-* {
-    margin : 0;
-    padding : 0;
-}
 body {
-    background-color: lightblue;
-}
-  
-.button {
-    display:block;
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-    border: 1px solid red;
+    background-color: powderblue;
   }
-  
-  
-  .button1 {border-radius: 2px;}
-  .button2 {border-radius: 4px;}
-  .button3 {border-radius: 8px;}
-  .button4 {border-radius: 12px;}
-  .button5 {border-radius: 50%;}
+  h1 {
+    color: blue;
+  }
+  p {
+    color: red;
+  }
