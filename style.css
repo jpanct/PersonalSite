@@ -1,8 +1,61 @@
+* {
+    box-sizing: border-box;
+  }
 body {
-    background-color: lightblue;
+    background-color: F5F1E3;
+    font-family: 'Comic Neue', cursive;
+    text-align: center;
+    overflow: scroll;
+
 }  
+p {
+    font-size: 11x;
+}
+h1 {
+    font-weight: bolder;
+    font-size: 30x;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #F3F3F3;
+    overflow: hidden;
+  }
+
+
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: right;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    color: #D5C7BC;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    float: left;
+    color: #000000;
+    background-color: #98e7f1;
+  }
+
+
+.intro{
+    text-align: center;
+    width: 40%;
+    padding: 5%;
+}
+
+.profileimage, .intro {
+    display: inline-block;
+  }
 .button {
-    background-color: #04AA6D;
     border: none;
     color: white;
     padding: 20px;
@@ -11,9 +64,39 @@ body {
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
+    border-radius: 50%;
   }
-  .button1 {border-radius: 2px;}
-  .button2 {border-radius: 4px;}
-  .button3 {border-radius: 8px;}
-  .button4 {border-radius: 12px;}
-  .button5 {border-radius: 50%;}
+  .button1 {background-color: #DEE8D5;}
+  .button2 {background-color: #D5C7BC;}
+  .button3 {background-color: #AC92A6;}
+  .button4 {background-color: #E9FAE3;}
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 10%;
+    width: 100%;
+    background-color: #DEE8D5;
+    text-align: center;
+    
+ }
+
+ .column {
+    margin-top: 1%;
+    float: left;
+    width: 33.33%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/**
+  https://coolors.co/050505-1b9aaa-dddbcb-f5f1e3-ffffff
+  https://coolors.co/ffffff-e9fae3-dee8d5-d5c7bc-ac92a6 
+  **/
+
