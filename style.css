@@ -6,14 +6,15 @@ body {
     font-family: 'Comic Neue', cursive;
     text-align: center;
     overflow: scroll;
-
+    font-size: 25x;
 }  
 p {
-    font-size: 15x;
+    font-size: 20px;
 }
 h1 {
     font-weight: bolder;
-    font-size: 30x;
+    display: grid;
+    font-size: 43px;
 }
 
 /* Add a black background color to the top navigation */
@@ -22,7 +23,6 @@ h1 {
     overflow: hidden;
   }
 
-
   /* Style the links inside the navigation bar */
   .topnav a {
     float: right;
@@ -30,7 +30,7 @@ h1 {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
   }
   
   /* Change the color of links on hover */
@@ -45,10 +45,18 @@ h1 {
     background-color: #98e7f1;
   }
 
-.intro{
-    width: 80%;
-    padding: 5%;
-}
+.row {
+    height: 100vh;
+  }
+
+  
+  @media (min-width: 992px) {
+    .align-items-center {
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+    }
+  }
 .button {
     border: none;
     color: white;
@@ -56,7 +64,7 @@ h1 {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 20px;
     margin: 4px 2px;
     border-radius: 50%;
     cursor: pointer;
@@ -77,6 +85,8 @@ h1 {
     width: 100%;
     background-color: #DEE8D5;
     text-align: center;
+    font-size: 15px;
+
     
  }
 
@@ -85,13 +95,34 @@ h1 {
     float: left;
     width: 33.33%;
   }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
+
+  @media (max-width: 767px) {
+    .introimage {
+        width: 60%;
+        align-items: center;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+      .body{
+        padding-top: 50px;
+      }
+      .button1, .button2, .button3 {
+        display: none;
+        }
   }
+
+  @media screen and (max-width: 767px) {
+    .introimage {
+      margin-top: 20px; 
+    }
+    .intro{
+        overflow: scroll;
+        padding-bottom: 90px;
+        margin-bottom: 120px;
+    }
+  }
+
 
 /**
   https://coolors.co/050505-1b9aaa-dddbcb-f5f1e3-ffffff
